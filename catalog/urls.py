@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from catalog.apps import CatalogConfig
+from catalog.views import contacts, home
+
+app_name = CatalogConfig.name
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', contacts),
+    path('', home)
 ]
