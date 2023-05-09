@@ -78,7 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'catalog',
-        'USER': 'postgres'
+        'USER': 'postgres',
+        'PASSWORD': '1357907'
     }
 }
 
